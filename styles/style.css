@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&family=Unbounded:wght@900&family=Syncopate:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
+}
+
+body {
+    background-color: #000;
+    overflow-x: hidden;
+    min-height: 100vh;
+    height: 3020px;
+    color: #fff;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+#looper::before {
+    position: absolute;
+    content: "";
+    z-index: 1;
+    background: url("../LooperGroup.png") 0 0 no-repeat;
+    width: 2514px;
+    height: 2119px;
+    top: -430px;
+
+    opacity: 1;
+    transform: rotate(0deg);
+}
+
+#circle::before {
+    position: absolute;
+    content: "";
+    z-index: 1;
+    background: url("../circle_1.png") 0 0 no-repeat;
+    width: 2514px;
+    height: 2119px;
+    top: 900px;
+
+    opacity: 1;
+    transform: rotate(0deg);
+}
+#circle::after {
+    position: absolute;
+    content: "";
+    z-index: 1;
+    background: url("../circle_2.png") 0 0 no-repeat;
+    width: 2514px;
+    height: 2119px;
+    top: 900px;
+
+    opacity: 1;
+    transform: rotate(0deg);
+}
+
+@media (max-width: 768px) {
+    #circle::before {
+        background: url("../circle_3.png") 0 0 no-repeat;
+    }
+    #circle::after {
+        background: none;
+    }
+    #looper::before {
+        position: absolute;
+        transform: rotate(50deg);
+        left: -900px;
+    }
+}
+
+section {
+    flex-grow: 1;
+    padding-top: 215px;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 10px;
+    position: relative;
+}
+
+.footer {
+    flex-shrink: 1;
+}
+
+.footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.design_group {
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    color: royalblue;
+    font-weight: bold;
+    z-index: 23;
+}
+.design_group a {
+    color: cornflowerblue;
+    cursor: pointer;
+}
+
+@media (max-width: 606px) {
+    .footer .container {
+        flex-direction: column;
+        gap: 12px;
+    }
+}
