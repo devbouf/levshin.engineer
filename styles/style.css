@@ -34,7 +34,6 @@ body {
 #circle::before {
     position: absolute;
     content: "";
-    z-index: 1;
     background: url("../circle_1.png") 0 0 no-repeat;
     width: 2514px;
     height: 2119px;
@@ -46,7 +45,6 @@ body {
 #circle::after {
     position: absolute;
     content: "";
-    z-index: 1;
     background: url("../circle_2.png") 0 0 no-repeat;
     width: 2514px;
     height: 2119px;
