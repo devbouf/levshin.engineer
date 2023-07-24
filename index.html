@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dmitry Levshin</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/index.css">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+
+<div id="looper"></div>
+<div id="circle"></div>
+
+<section>
+  <div class="container">
+    <div class="hero">
+      <h1 class="hero__title">Dmitry Levshin</h1>
+      <p class="hero__desc">16 y.o. skilled software-developer</p>
+      <span class="hero__subtitle">Больше информации ниже</span>
+    </div>
+    <div class="telegram-card">
+      <button id="close-notification"><i class="ri-close-line"></i></button>
+      <h2 class="telegram-card__title">Не забудьте подписаться на мой Telegram-канал!</h2>
+      <p class="telegram-card__desc">Там много разной интересной информации и новостей из моей жизни.</p>
+      <a href="https://t.me/" class="telegram-card__button">Подписаться</a>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="wrapper">
+      <div class="wrapper-block about-me">
+        <h1 class="wrapper__title">Обо мне</h1>
+        <p class="wrapper__desc">Меня зовут Дмитрий, мой псевдоним - bouf. Я опытный харизматичный разработчик из
+          Москвы. За свою карьеру я успел поработать во многих популярных проектах и накопить богатый опыт в работе с
+          языками программирования, такими как JavaScript, TypeScript и совсем немного Java.</p>
+      </div>
+      <div class="wrapper-block skills">
+        <h1 class="wrapper__title">“Скиллы”</h1>
+        <p class="wrapper__desc">Мне довелось работать с Discord.js, GrammY, Express, Moleculer, Svelte, Git, MongoDB,
+          MySql, Vk-io и многие другие. Я знаком с разными технологиями и библиотеками и уверен в своей способности
+          быстро изучить любой другой фреймворк или библиотеку. Главное для меня - написать высококачественный проект
+          для Вас, и я готов использовать любые инструменты и технологии, чтобы это было возможно.</p>
+      </div>
+      <div class="wrapper-block po">
+        <h1 class="wrapper__title">Программное обеспечение</h1>
+        <p class="wrapper__desc">Программное обеспечение, которое я использую, помогает мне создавать качественный код и
+          улучшать процесс разработки программного обеспечения. Основной инструмент, который я использую для работы с
+          JavaScript и TypeScript - это JetBrains Webstorm. Этот IDE предоставляет широкий набор инструментов и функций
+          для удобного и эффективного написания кода.
+          Однако, я также использую иногда Visual Studio Code. Для различных других задач или совместной работы.</p>
+      </div>
+      <div class="wrapper-block bay">
+        <h1 class="wrapper__title">До встречи!</h1>
+        <p class="wrapper__desc">Для связи со мной вы можете использовать <a href="https://t.me" style="color: #4e95ff">Telegram</a>
+          или <a href="https://discord.com" style="color: #1F78FF">Discord</a>. Это наиболее быстрые и
+          удобные способы связи со мной. Цена на заказ оценивается индивидуально, в зависимости от его сложности. Кроме
+          того, я всегда рад новым крутым проектам, идеям и всегда за движ!
+          <br>
+          <br>
+          Если что, вот мой Github профиль!</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+</footer>
+
+<script>
+    document.getElementById("close-notification").addEventListener("click", (ev) => {
+        ev.preventDefault()
+
+        document.querySelector(".telegram-card").style.display = "none"
+    })
+</script>
+
+</body>
+</html>
